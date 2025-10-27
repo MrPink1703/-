@@ -1,0 +1,1 @@
+ArrayList<String> list = new ArrayList<>(List.of("a", "b", "c"))  // создаёт ArrayList и заполняет его элементами в одной строке
