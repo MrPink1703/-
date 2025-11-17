@@ -1,0 +1,47 @@
+{\rtf1\ansi\ansicpg1251\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # \uc0\u1057 \u1086 \u1079 \u1076 \u1072 \u1085 \u1080 \u1077  \u1080  \u1088 \u1072 \u1073 \u1086 \u1090 \u1072  \u1089  \u1074 \u1083 \u1086 \u1078 \u1077 \u1085 \u1085 \u1099 \u1084 \u1080  \u1089 \u1087 \u1080 \u1089 \u1082 \u1072 \u1084 \u1080 \
+print("=== \uc0\u1052 \u1091 \u1083 \u1100 \u1090 \u1080 \u1089 \u1087 \u1080 \u1089 \u1086 \u1082  (Python) ===")\
+\
+# \uc0\u1057 \u1086 \u1079 \u1076 \u1072 \u1085 \u1080 \u1077  \u1074 \u1083 \u1086 \u1078 \u1077 \u1085 \u1085 \u1086 \u1075 \u1086  \u1089 \u1087 \u1080 \u1089 \u1082 \u1072 \
+nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\
+print("\uc0\u1048 \u1089 \u1093 \u1086 \u1076 \u1085 \u1099 \u1081  \u1074 \u1083 \u1086 \u1078 \u1077 \u1085 \u1085 \u1099 \u1081  \u1089 \u1087 \u1080 \u1089 \u1086 \u1082 :", nested_list)\
+\
+# \uc0\u1044 \u1086 \u1073 \u1072 \u1074 \u1083 \u1077 \u1085 \u1080 \u1077  \u1085 \u1086 \u1074 \u1086 \u1075 \u1086  \u1089 \u1087 \u1080 \u1089 \u1082 \u1072 \
+nested_list.append([10, 11, 12])\
+print("\uc0\u1055 \u1086 \u1089 \u1083 \u1077  \u1076 \u1086 \u1073 \u1072 \u1074 \u1083 \u1077 \u1085 \u1080 \u1103  \u1085 \u1086 \u1074 \u1086 \u1075 \u1086  \u1089 \u1087 \u1080 \u1089 \u1082 \u1072 :", nested_list)\
+\
+# \uc0\u1048 \u1079 \u1084 \u1077 \u1085 \u1077 \u1085 \u1080 \u1077  \u1101 \u1083 \u1077 \u1084 \u1077 \u1085 \u1090 \u1072 \
+nested_list[0][1] = 99\
+print("\uc0\u1055 \u1086 \u1089 \u1083 \u1077  \u1080 \u1079 \u1084 \u1077 \u1085 \u1077 \u1085 \u1080 \u1103  \u1101 \u1083 \u1077 \u1084 \u1077 \u1085 \u1090 \u1072 :", nested_list)\
+\
+# \uc0\u1059 \u1076 \u1072 \u1083 \u1077 \u1085 \u1080 \u1077  \u1101 \u1083 \u1077 \u1084 \u1077 \u1085 \u1090 \u1072 \
+removed = nested_list.pop(1)\
+print("\uc0\u1059 \u1076 \u1072 \u1083 \u1077 \u1085 \u1085 \u1099 \u1081  \u1101 \u1083 \u1077 \u1084 \u1077 \u1085 \u1090 :", removed)\
+print("\uc0\u1055 \u1086 \u1089 \u1083 \u1077  \u1091 \u1076 \u1072 \u1083 \u1077 \u1085 \u1080 \u1103 :", nested_list)\
+\
+# \uc0\u1055 \u1088 \u1077 \u1086 \u1073 \u1088 \u1072 \u1079 \u1086 \u1074 \u1072 \u1085 \u1080 \u1077  \u1074 \u1083 \u1086 \u1078 \u1077 \u1085 \u1085 \u1086 \u1075 \u1086  \u1089 \u1087 \u1080 \u1089 \u1082 \u1072  \u1074  \u1087 \u1083 \u1086 \u1089 \u1082 \u1080 \u1081 \
+groups = [['Hong', 'Ryan'], ['Andry', 'Ross'], ['Mike', 'Smith']]\
+print("\\n\uc0\u1048 \u1089 \u1093 \u1086 \u1076 \u1085 \u1099 \u1077  \u1075 \u1088 \u1091 \u1087 \u1087 \u1099 :", groups)\
+\
+# \uc0\u1057 \u1087 \u1086 \u1089 \u1086 \u1073  1: \u1089  \u1087 \u1086 \u1084 \u1086 \u1097 \u1100 \u1102  \u1094 \u1080 \u1082 \u1083 \u1086 \u1074 \
+names = []\
+for group in groups:\
+    for name in group:\
+        names.append(name)\
+print("\uc0\u1055 \u1083 \u1086 \u1089 \u1082 \u1080 \u1081  \u1089 \u1087 \u1080 \u1089 \u1086 \u1082  (\u1094 \u1080 \u1082 \u1083 \u1099 ):", names)\
+\
+# \uc0\u1057 \u1087 \u1086 \u1089 \u1086 \u1073  2: \u1089  \u1087 \u1086 \u1084 \u1086 \u1097 \u1100 \u1102  extend\
+names_extend = []\
+for group in groups:\
+    names_extend.extend(group)\
+print("\uc0\u1055 \u1083 \u1086 \u1089 \u1082 \u1080 \u1081  \u1089 \u1087 \u1080 \u1089 \u1086 \u1082  (extend):", names_extend)\
+\
+# \uc0\u1057 \u1087 \u1086 \u1089 \u1086 \u1073  3: \u1089  \u1087 \u1086 \u1084 \u1086 \u1097 \u1100 \u1102  list comprehension\
+names_comp = [name for group in groups for name in group]\
+print("\uc0\u1055 \u1083 \u1086 \u1089 \u1082 \u1080 \u1081  \u1089 \u1087 \u1080 \u1089 \u1086 \u1082  (comprehension):", names_comp)}
