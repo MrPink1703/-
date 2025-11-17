@@ -1,0 +1,20 @@
+
+Переместить корень кучи в конец диапазона и восстановить кучу на [begin, end-1).
+
+
+#include <vector>
+#include <algorithm>
+#include <iostream>
+int main(){
+    std::vector<int> a = {7,2,5};
+    std::make_heap(a.begin(), a.end()); // max-heap
+    std::pop_heap(a.begin(), a.end());  // корень -> a.back()
+    int root = a.back(); a.pop_back();  // удалить максимум
+    std::cout << root;                  // 7
+}
+
+
+• `make_heap` строит кучу из массива.
+• `pop_heap` меняет корень с последним, затем «просеивает вниз» корень на суффиксе [begin, end-1).
+• Далее `pop_back` реально удаляет корень (который теперь в конце).
+

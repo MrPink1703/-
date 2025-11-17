@@ -1,0 +1,20 @@
+HashMap — put/get
+
+
+import java.util.HashMap;
+public class MapDemo {
+  public static void main(String[] args){
+    HashMap<String,Integer> map = new HashMap<>();
+    map.put("Bob", 7);            // вставка
+    map.put("Bob", 9);            // обновление
+    Integer x = map.get("Bob");   // поиск
+    System.out.println(x);
+  }
+}
+```
+
+• Внутри: вычисление хеша → выбор бакета → цепочка/дерево бакета.
+• put вставляет или перезаписывает по ключу.
+• get возвращает значение или null.
+
+

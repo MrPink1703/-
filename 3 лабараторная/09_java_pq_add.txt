@@ -1,0 +1,19 @@
+PriorityQueue (min-heap). Вставка add
+
+
+
+import java.util.PriorityQueue;
+public class Demo {
+  public static void main(String[] args){
+    PriorityQueue<Integer> pq = new PriorityQueue<>(); // min-heap
+    pq.add(5);
+    pq.add(2); // станет корнем
+    pq.add(7);
+    System.out.println(pq.peek()); // 2
+  }
+}
+
+• add — вставка с просеиванием вверх.
+• peek — просмотр минимума (корня) без удаления.
+
+

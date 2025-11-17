@@ -1,0 +1,22 @@
+
+Вектор бакетов, каждый бакет — вектор пар <K,V>. Хеш — std::hash<K>.
+
+
+template<class K, class V>
+class ChainedHash {
+    std::vector<std::vector<std::pair<K,V>>> b;
+    size_t n=0;
+    size_t idx(const K& k) const { return std::hash<K>{}(k) % b.size(); }
+public:
+    explicit ChainedHash(size_t cap=8): b(cap) {}
+    void set(const K& k, const V& v){
+        auto i = idx(k);
+        for (auto& kv : b[i]) if (kv.first==k){ kv.second=v; return; }
+        b[i].push_back({k,v}); n++;
+    }
+};
+
+
+• Считаем индекс бакета. 
+• Линейно ищем ключ в цепочке — обновляем или добавляем.
+

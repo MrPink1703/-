@@ -1,0 +1,19 @@
+PriorityQueue. Извлечение минимума poll
+
+
+import java.util.PriorityQueue;
+public class Demo2 {
+  public static void main(String[] args){
+    PriorityQueue<Integer> pq = new PriorityQueue<>();
+    pq.add(3); pq.add(1); pq.add(4);
+    Integer m = pq.poll();            // удалить и вернуть минимум
+    System.out.println(m);            // 1
+    System.out.println(pq.peek());    // 3
+  }
+}
+```
+
+
+• poll: корень меняется с последним и «просеивается вниз».
+• peek: новый минимум.
+

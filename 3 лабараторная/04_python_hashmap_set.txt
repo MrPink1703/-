@@ -1,0 +1,22 @@
+
+Массив бакетов; каждый бакет — список пар 
+class HashMap:
+    def __init__(self, cap=8):
+        self.n = 0
+        self.cap = cap
+        self.b = [[] for _ in range(cap)]
+    def _idx(self, k): return hash(k) % self.cap
+    def set(self, k, v):
+        i = self._idx(k)
+        for p, (kk, _) in enumerate(self.b[i]):
+            if kk == k:
+                self.b[i][p] = (k, v)  # обновление
+                return
+        self.b[i].append((k, v))      # вставка
+        self.n += 1
+
+
+1) Вычисляем индекс бакета: `hash(key) % capacity`.
+2) Ищем ключ в списке бакета; если есть — обновляем value.
+3) Иначе добавляем новую пару в конец цепочки.
+
